@@ -1,0 +1,340 @@
+html, body{
+    background-image: url(../img/fondo.gif);
+    margin: 0;
+    padding: 0;
+    backdrop-filter: blur(2px);
+    width: 100%;
+    font-family: 'Quicksand';
+    font-weight: bold !important;
+    color: #fff !important;
+    user-select: none;
+}
+
+
+.pestaña1{
+    position: absolute;
+    background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(174,45,253,1) 100%);
+    width: 100%;
+    height: 50vh;
+    top: 0;
+    z-index: 999;
+}
+
+.pestaña2{
+    position: absolute;
+    background: linear-gradient(0deg, rgba(174,45,253,1) 0%, rgba(34,193,195,1) 100%);
+    width: 100%;
+    height: 50vh;
+    bottom: 0;
+    z-index: 999;
+}
+
+.pestaña1, .pestaña2{
+    animation-name: entrada;
+    animation-delay: 0.4s;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+
+.contenedor{
+    background-color: #000;
+    width: 75%;
+    height: 93vh;
+    margin: auto;
+    position: relative;
+    text-align: justify;
+    padding: 1%;
+}
+
+.menu{
+    background-color: #000;
+    width: 100%;
+    height: 7vh;
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    border-bottom: 1px solid #fff;
+    border-image: linear-gradient(to right, rgb(255, 0, 0), rgb(255, 0, 0)) 1;
+    animation: bordeDeslizar 5s infinite;
+    font-family: 'Chakra Petch';
+}
+
+h1, h3{
+    font-family: 'Chakra Petch';
+}
+
+.enlace{
+    background-color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 12.512%;
+    text-align: center;
+    cursor: pointer;
+    font-size: 30px;
+    transition: 0.2s;
+}
+
+.formulario{
+    background-color: #0000ff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 12.512%;
+    text-align: center;
+    cursor: pointer;
+    font-size: 30px;
+    transition: 0.2s;
+}
+
+
+
+@keyframes entrada{
+    to{
+        height: 0;
+    };
+}
+
+a:link, a:visited, a:active{
+    text-decoration: none !important;
+    color: #fff !important;
+}
+
+a:hover{
+    color: #1b44ff !important;
+}
+
+
+.enlace:hover{
+    background-color: #fff;
+    color:black;
+    transition: 0.2s;
+    transition-timing-function: ease-in-out;
+}
+
+.dropdown-item{
+    margin-right: 20% !important;
+}
+
+.formulario:hover{
+    background-color: #fff;
+    color: #000;
+    transition: 0.2s;
+}
+
+@keyframes bordeDeslizar {
+    0% {
+        border-image: linear-gradient(to right, rgb(255, 0, 0), rgb(255, 0, 0)) 1;
+      }
+      25% {
+        border-image: linear-gradient(to right, rgb(255, 0, 0), rgb(0, 255, 0)) 1;
+      }
+      50% {
+        border-image: linear-gradient(to right, rgb(0, 255, 0), rgb(0, 0, 255)) 1;
+      }
+      75% {
+        border-image: linear-gradient(to right, rgb(0, 0, 255), rgb(255, 0, 0)) 1;
+      }
+      100% {
+        border-image: linear-gradient(to right, rgb(255, 0, 0), rgb(255, 0, 0)) 1;
+      }
+    }
+
+.intro
+{
+    width: 100%;
+    height: 100%;
+}
+
+.content1{
+    width: 100%;
+    height: 60%;
+    background-color: #000;
+    display: flex;
+
+}
+
+.content2{
+    width: 35%;
+    height: 100%;
+
+}
+.margen{
+    width: 100%;
+    height: 15%;
+    background-color: #000;
+    float: left;
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: -5px;
+}
+
+.imagen{
+    float: left;
+    width: 100%;
+    height: 80%;
+    background-image: url('../img/persona.png');
+    background-position: left;
+    background-size: cover;
+    transform: scaleX(-1);
+
+}
+
+.contTitulo{
+    width: 100%;
+    height: 10%;
+    background-color: #000;
+    text-align: center;
+    
+}
+
+.contentTexto{
+    margin: 0px 5px 0px 20px;
+    max-width: 75%;
+    background-color: #000;
+}
+
+.barraIzq{
+    width: 50%;
+    height: 100%;
+    float: left;
+    background-color: #000;
+    border-right: 1px solid #fff;
+    
+}
+
+.barraDer{
+    width: 50%;
+    height: 100%;
+    float: left;
+    background-color: #000;
+    border-left: 1px solid #fff;
+}
+
+.dropdown-menu li > a{
+    color: #000 !important;
+}
+
+.barraIzq .progress{
+    width: 50% !important;
+    margin-bottom: 10px !important;
+    margin-left: 10% !important;
+}
+
+ .barraIzq .progress-bar{
+    background-color: #099396 !important;
+
+}
+
+.barraDer .progress{
+    width: 50% !important;
+    margin-bottom: 10px !important;
+    margin-left: 40% !important;
+}
+
+ .barraDer .progress-bar{
+    background-color: #d55e34 !important;
+
+}
+
+.contBarras{
+    width: 100%; 
+    height: 36.4%;
+    
+}
+
+.barraIzq span{
+    margin-left: 10% !important;
+    font-family: 'Chakra Petch';
+
+}
+
+.barraDer span{
+    margin-left: 40% !important;
+    font-family: 'Chakra Petch';
+}
+
+p span{
+    color: #999;
+    font-size: 10px;
+}
+
+.footer{
+    width: 100%;
+    height: 6%;
+    display: flex;
+    justify-content: center;
+    border-top: 1px solid #fff;
+}
+
+.content3{
+    height: 25%;
+    width: 100%;
+}
+
+.red{
+    text-align: center;
+    height: 100%;
+    width: 10%;
+}
+
+.emojiguy{
+    width: 10%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.aviso{
+    display: flex;
+}
+
+table{
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    font-family: 'Chakra Petch';
+}
+
+td{
+    width: 50%;
+}
+
+.tituloTd{
+    text-align: center;
+    color: #000;
+    background-color: #fff;
+
+}
+
+input{
+    height: 20%;
+}
+
+#direccion{
+    width: 70%;
+}
+
+#localizaciones{
+    width: 70%;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+#cvv{
+    width: 10%;
+}
+
+#genero{
+    width: 57%;
+}
+
+#reset{
+    margin-left: 81%;
+}

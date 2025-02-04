@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>FORMULARIO</title>
+        <link rel="icon" type="image/x-icon" href="/img/disquete.png">
+        <link rel="stylesheet" href="/CSS/import.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="https://kit.fontawesome.com/465e08169a.js" crossorigin="anonymous"></script>    
+    </head>
+    <body>
+        <div class="intro">
+            <div class="pestaña1">
+            </div>
+            <div class="pestaña2">
+            </div>
+        </div>
+        <div class="menu">
+            <div class="enlace dropdown" type="button" data-toggle="dropdown">
+                <i class="fas fa-bars fa-2xs mr-3 ml-n5"></i> Inicio
+                <ul class="dropdown-menu">
+                <li><a class="dropdown-item" onclick="window.location.href='../index.html';">Página principal</a></li>
+                </ul>
+            </div>
+            <div class="formulario">
+                <div onclick="window.location.href='./html/form.html';">Formulario</div>
+            </div>
+        </div>
+        <div class="contenedor">
+            <div class="margen">
+                <h1>FORMULARIO</h1>
+                <h3>¡Quiero conocer a tu personaje!</h3>
+            </div>
+            <form>
+                <table>
+                    <tr>
+                        <td class="tituloTd" colspan="2">INFORMACIÓN PERSONAL</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="nombre">Nombre: </label><br>
+                            <input type="text" id="nombre" name="nombre">
+                        </td>
+                        
+                        <td>
+                            <label for="apellidos">Apellidos: </label><br>
+                            <input type="text" id="apellidos" name="apellidos">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="direccion">Dirección: </label><br>
+                            <input type="text" id="direccion" name="direccion">
+                        </td>
+                        <td>
+                            <label for="fuera">Horario fuera de casa: </label><br>
+                            <input type="text" id="fuera" name="fuera">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="localizaciones">¿Donde guardas tus objetos de valor?</label><br>
+                            <input type="text" id="localizaciones" name="localizaciones">
+                        </td>
+                        <td>
+                            <label for="dni">DNI:</label><br>
+                            <input type="text" id="dni" name="dni">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="tarjeta">Número de Tarjeta:</label><br>
+                            <input type="number" id="tarjeta" name="tarjeta">
+                        </td>
+                        <td>
+                            <label for="cvv">CVV</label><br>
+                            <input type="number" id="cvv" name="cvv" maxlength="3">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="titular">Nombre del titular:</label><br>
+                            <input type="text" id="titular" name="titular">
+                        </td>
+                        <td>
+                            <label for="email">Correo electrónico:</label><br>
+                            <input type="text" id="correo" name="correo">
+                        </td>
+                    </tr>
+                    <tr height="100">
+                        <td>
+                            <label for="tipoTarjeta">Tipo de Tarjeta:</label><br>
+                            <input type="radio" id="tipoTarjeta1" name="tipoTarjeta"> VISA
+                            <input type="radio" id="tipoTarjeta2" name="tipoTarjeta"> MASTERCARD
+                        </td>
+                        <td>
+                            <label for="numeroTelefono">Número de teléfono:</label><br>
+                            <input type="number" id="numeroTelefono" name="numeroTelefono">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="tituloTd" colspan="2">INFORMACIÓN DEL PERSONAJE
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="nombreP">Nombre del personaje:</label><br>
+                            <input type="text" id="nombreP" name="nombreP">
+                        </td>
+                        <td>
+                            <label for="universo">Universo:</label><br>
+                            <input type="text" id="universo" name="universo">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="anatomia">Anatomía:</label><br>
+                            <input type="checkbox" id="anatomia" name="anatomia"> Tiene brazos |
+                            <input type="checkbox" id="anatomia" name="anatomia"> Tiene piernas |
+                            <input type="checkbox" id="anatomia" name="anatomia"> Tiene oídos |
+                            <input type="checkbox" id="anatomia" name="anatomia"> Tiene ojos |
+                        </td>
+                        <td>
+                            <label for="genero">Anatomía:</label><br>
+                            <input type="text" id="genero" name="genero" placeholder="Hay demasiados, no podría poner una lista">
+                        </td>
+                    </tr>
+                    <tr height="100">
+                        <td>
+                            <input type="reset" id="reset">
+                        </td>
+                        <td>
+                            <input type="submit" id="submit">
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+    </body>
+</html>
